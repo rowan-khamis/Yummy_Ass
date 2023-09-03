@@ -1,0 +1,47 @@
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+} */
+body{
+  overflow-y: hidden;
+}
+.layer{
+  height: 100px;
+  z-index: 2;
+  top: 100%;
+  background-color: rgba(240, 248, 255,0.7);
+  transition: all 500ms 0ms ease-in;
+}
+
+.meal:hover{
+  .layer{
+      top:0px;
+  }
+}
+.meal-title{
+  font-size: calc(1.3rem + .6vw);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: rgb(52, 51, 51);
+}
+/* ------------------------------ */
+img{
+  width: 50px;
+}
+.nav{
+  position: fixed;
+  z-index: 9999;
+top: 0;
+bottom: 0;
+left: -256.562px   ;
+}
+
+/* .form-control {
+  width: 45%;
+} */
+.tag-list{
+  text-decoration: none;
+}

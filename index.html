@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yummy</title>
+  <link rel="icon" href="./img/logo.png" />
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  
+
+</head>
+<body class="bg-dark ">
+
+    <!-- loading -->
+ <div id="loading" class="w-100 vh-100 bg-dark d-absolute">
+  <div class="d-flex justify-content-center align-items-center h-100 bg-black">
+   <i class="fa fa-spinner fa-spin text-white fa-4x "></i>
+   
+  </div>
+  </div> 
+   <!-- -------------------------------------meals--------------------------------------------- -->
+ <div class="container w-75">
+  <div class="row p-5 g-4" id="search">
+  </div>
+  <div class="row p-5 g-4" id="rowData">  
+  </div>
+  
+  <div class="row " id="areaData">
+     
+  </div>
+
+  <div class="row" id="Ingredients">
+    
+  </div>
+</div>
+
+
+  <!---------------------------- side nav---------------------- -->
+     <div class="nav d-flex position-fixed z-3 nav">
+        <div class=" nav-content bg-dark vh-100 d-flex justify-content-between flex-column p-4 text-white ">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li onclick="showSearchInputs();closeSideNav()" class="py-2 position-relative cursor-pointer" style="top: 0px;">Search</li>
+                    <li onclick="getCategories();closeSideNav()" class="py-2 position-relative cursor-pointer" style="top: 0px;">Categories</li>
+                    <li onclick="getArea();closeSideNav()" class="py-2 position-relative cursor-pointer" style="top: 0px;">Area</li>
+                    <li onclick="getIngredients();closeSideNav()" class="py-2 position-relative cursor-pointer" style="top: 0px;">Ingredients</li>
+                    <li onclick="showContacts();closeSideNav() " class="py-2 position-relative cursor-pointer" style="top: 0px;">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons">
+                    <i class="fa fa-brands fa-facebook"></i>
+                    <i class="fa fa-brands fa-twitter"></i>
+                    <i class="fa fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-side bg-white vh-100 d-flex flex-column py-4 px-2 text-center justify-content-between text-black">
+            
+                <img class=" " src="img/logo.png" alt="yummy logo">
+                <i class="fa fa-bars fa-2x text-black"></i>
+        
+            
+        <div >
+            <i class="fa fa-solid fa-globe d-block text-black"></i>
+            <i class="fa fa-solid fa-share-nodes text-black"></i>
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src='./js/jquery-3.4.1.min.js'></script>
+  <script src='./js/main.js'></script>
+</body>
+</html>
