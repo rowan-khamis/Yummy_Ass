@@ -172,8 +172,8 @@ async function getAreaMeals(area) {
     let response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${area}`)
     response = await response.json()
 
-     displayMeals(response.meals.slice(0, 20))
-    // $("#loading").fadeOut(300)
+     displayMeals(response.meals.slice(0, 20));
+     $("#loading").fadeOut(300)
 
 }
 
